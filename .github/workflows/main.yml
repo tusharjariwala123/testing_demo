@@ -21,4 +21,4 @@ jobs:
                 aws-region:  us-east-1
 
           -  name: Deploy static site to s3 bucket
-             run: aws s3 sync . s3://t-test-project  --delete
+             run: aws s3 sync dist/ s3://t-test-project  --delete
